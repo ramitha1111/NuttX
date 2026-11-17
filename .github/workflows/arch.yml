@@ -24,6 +24,7 @@ on:
 jobs:
   Select-Builds:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
 
     outputs:
       skip_all_builds: ${{ steps.select-builds.outputs.skip_all_builds }}
